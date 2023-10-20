@@ -1,0 +1,77 @@
+body {
+	padding-top: 50px;
+}
+
+.nav {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+
+
+ul {
+	align-content: center;
+	justify-content: center;
+	width: 1200px;
+	background: #005B41;
+	position: fixed;
+	top: 0;
+}
+ul li {
+	display: inline-block;
+}
+
+ul li:nth-child(2) {
+	color: white;
+}
+
+ul li a {
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 15px 5px;
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: monospace;
+}
+
+ul li a:hover {
+	background: rgba(0,0,0,.2);
+	border-radius: 4px;
+}
+
+.bloco {
+	max-width: 600px;
+	margin: 40px auto;
+	padding: 20px;
+}
+
+.bloco:nth-child(odd) {
+	margin-top: -30px;
+}
+
+h1 {
+	font-size: 32px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	font-family: "Poppins", "Book Antiqua", Palatino, serif;
+	color: #005B41;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+p {
+	margin-bottom: 16px;
+	font-size: 14px;
+	line-height: 1.2;
+	font-family: monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
