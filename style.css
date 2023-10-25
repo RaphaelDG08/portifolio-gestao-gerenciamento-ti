@@ -107,6 +107,9 @@ a {
 		gap: 15px;
 	}
 	.bloco:nth-child(1){
-		margin: 40px auto 0 auto;
+		margin: 20px auto 0 auto;
+	}
+	.bloco h1 {
+		font-size: 16px;
 	}
 }
