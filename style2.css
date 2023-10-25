@@ -1,77 +1,112 @@
-body {
-	padding-top: 50px;
-}
-
-.nav {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-}
-
-
-
-ul {
-	align-content: center;
-	justify-content: center;
-	width: 1200px;
-	background: #005B41;
+.menu-bg {
+	margin-top: 30px;
+	background-color: #005B41;
+	max-width: 100%;
 	position: fixed;
 	top: 0;
 }
-ul li {
-	display: inline-block;
+
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 30px 15px;
+	gap: 30px;
+	justify-content: center;
 }
 
-ul li:nth-child(2) {
-	color: white;
-}
-
-ul li a {
-	display: inline-block;
-	padding: 10px 20px;
-	margin: 15px 5px;
+.menu a {
 	color: white;
 	font-size: 18px;
-	text-decoration: none;
+	padding: 10px 15px;
+	letter-spacing: 1.2px;
 	text-transform: uppercase;
-	font-family: monospace;
 }
 
-ul li a:hover {
-	background: rgba(0,0,0,.2);
+.menu a:hover {
+	background-color: rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 }
 
 .bloco {
-	max-width: 600px;
-	margin: 40px auto;
 	padding: 20px;
+	max-width: 600px;
+	margin: 0 auto;
 }
 
-.bloco:nth-child(odd) {
-	margin-top: -30px;
+
+.bloco:nth-child(1){
+	margin: 240px auto 0 auto;
 }
 
-h1 {
-	font-size: 32px;
-	margin-bottom: 20px;
-	padding-bottom: 10px;
-	border-bottom: 1px solid rgba(0,0,0,.1);
-	font-family: "Poppins", "Book Antiqua", Palatino, serif;
-	color: #005B41;
+.bloco h1 {
+	font-size: 24px;
+	margin-bottom: 10px;
+	color: #0F0F0F;
+	border-bottom: 2px solid #008170;
 }
 
-h2 {
-	font-size: 20px;
+.bloco p {
+	font-size: 16px;
+	line-height: 1.4;
+	margin-bottom: 10px;
+	color: #232D3F;
 }
 
-p {
-	margin-bottom: 16px;
-	font-size: 14px;
-	line-height: 1.2;
-	font-family: monospace;
+.sub {
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #008170;
+}
+
+.lista-detalhe li {
+	margin-left: 20px;
+	list-style: square;
+	color: #008170;
+}
+
+.lista-detalhe li p {
+	font-size: 16px;
+	line-height: 1.4;
+	color: #232D3F;
+}
+
+.verde {
+	color: #008170;
+	text-transform: none;
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
+}
+
+body, ul, li, a, h1, p {
+	margin: 0px;
+	padding: 0px;
+}
+
+ul, li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+@media (max-width: 600px) {
+	.menu-bg {
+		position: relative;
+		margin-top: 0;
+	}
+	.menu a {
+		font-size: 12px;
+		padding: 5px 5px;
+		letter-spacing: 1px;
+	}
+	.menu {
+		padding: 15px 5px;
+		gap: 15px;
+	}
+	.bloco:nth-child(1){
+		margin: 40px auto 0 auto;
+	}
 }
