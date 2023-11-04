@@ -2,7 +2,6 @@
 	margin-top: 30px;
 	background-color: #005B41;
 	max-width: 100%;
-	position: fixed;
 	top: 0;
 }
 
@@ -33,9 +32,8 @@
 	margin: 0 auto;
 }
 
-
 .bloco:nth-child(1){
-	margin: 220px auto 0 auto;
+	margin: 60px auto 0 auto;
 }
 
 .bloco h1 {
@@ -73,6 +71,11 @@
 .verde {
 	color: #008170;
 	text-transform: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
 }
 
 html {
