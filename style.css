@@ -136,3 +136,15 @@ a {
   font-size: 32px;
   color: #008170;
 }
+
+@media (max-width: 600px) {
+  .footer p {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 300px) {
+  .footer p {
+    font-size: 16px;
+  }
+}
