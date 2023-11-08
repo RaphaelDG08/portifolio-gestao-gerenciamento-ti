@@ -137,9 +137,25 @@ a {
   color: #008170;
 }
 
+.mobile {
+  display: none;
+}
+
 @media (max-width: 600px) {
   .footer p {
     font-size: 24px;
+  }
+  .menu li {
+    display: none;
+  }
+  .mobile {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer p {
+    font-size: 20px;
   }
 }
 
@@ -147,4 +163,16 @@ a {
   .footer p {
     font-size: 16px;
   }
+  .menu li {
+    display: none;
+  }
+  .mobile {
+    display: inline-block;
+  }
+}
+
+.mobile {
+  color: white;
+  text-transform: uppercase;
+  font-size: 24px;
 }
